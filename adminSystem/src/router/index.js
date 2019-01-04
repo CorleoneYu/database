@@ -5,6 +5,7 @@ import Main from '@/components/main/main'
 import Goods from '@/components/main/goods/goods'
 import GoodsDetail from '@/components/main/goods/goodsDetail'
 import Order from '@/components/main/order/order'
+import OrderDetail from '@/components/main/order/orderDetail'
 import User from '@/components/main/user/user'
 import UserDetail from '@/components/main/user/userDetail'
 import Rights from '@/components/main/rights/rights'
@@ -39,6 +40,10 @@ export default new Router({
           path: '/main/order',
           name: 'order',
           component: Order
+        },{
+          path: '/main/orderDetail',
+          name: 'orderDetail',
+          component: OrderDetail
         },{
           path: '/main/user',
           name: 'user',

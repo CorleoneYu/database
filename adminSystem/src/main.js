@@ -10,6 +10,8 @@ Vue.use(ElementUI);
 import VueCookies from 'vue-cookies';
 Vue.use(VueCookies);
 
+import './assets/css/acss.css';
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
