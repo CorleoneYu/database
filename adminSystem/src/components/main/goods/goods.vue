@@ -31,11 +31,11 @@
         <el-button @click="openGoodsDialog({type: 'add'})" type="primary">添加商品</el-button>
       </div>
       <el-table :data="goodsList" stripe>
-        <el-table-column prop="id" label="商品id"></el-table-column>
-        <el-table-column prop="name" label="商品名称"></el-table-column>
-        <el-table-column prop="price" label="商品价格"></el-table-column>
+        <el-table-column prop="id" label="id" width="60"></el-table-column>
+        <el-table-column prop="name" label="商品名称" width="200"></el-table-column>
+        <el-table-column prop="price" label="商品价格" width="100"></el-table-column>
         <el-table-column prop="detail" label="商品描述"></el-table-column>
-        <el-table-column label="操作">
+        <el-table-column label="操作" width="180">
           <template slot-scope="scope">
             <el-button @click="toGoodsDetail(scope.row)" type="text" size="small">详情</el-button>
             <el-button @click="deleteGoods(scope.row)" type="text" size="small">删除</el-button>
